@@ -19,3 +19,10 @@ jobs:
     - name: Build
       run: npx --package mini-cross mc --no-tty _ make
 
+    - name: Upload executable artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: minecraft-mod-log-player-health
+        path: build/libs/*.jar
+        if-no-files-found: error
+
