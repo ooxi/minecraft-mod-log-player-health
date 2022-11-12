@@ -1,0 +1,7 @@
+---
+base: ubuntu:22.04
+install:
+ - make
+ - openjdk-17-jdk
+---
+
